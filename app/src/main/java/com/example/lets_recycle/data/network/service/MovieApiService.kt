@@ -1,4 +1,4 @@
-package com.example.lets_recycle.data.network
+package com.example.lets_recycle.data.network.service
 
 import com.example.lets_recycle.data.network.response.MovieResponse
 import retrofit2.Response
@@ -17,7 +17,7 @@ interface MovieApiService {
                 .baseUrl("https://simplifiedcoding.net/demos/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
-                .create(MovieApiService :: class.java)
+                .create(MovieApiService:: class.java)
         }
     }
 }

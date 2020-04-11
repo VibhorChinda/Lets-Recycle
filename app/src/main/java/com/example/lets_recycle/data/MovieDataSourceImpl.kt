@@ -2,7 +2,7 @@ package com.example.lets_recycle.data
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.example.lets_recycle.data.network.MovieApiService
+import com.example.lets_recycle.data.network.service.MovieApiService
 import com.example.lets_recycle.data.network.response.MovieResponse
 
 class MovieDataSourceImpl(private val movieApiService: MovieApiService) : MovieDataSource {
