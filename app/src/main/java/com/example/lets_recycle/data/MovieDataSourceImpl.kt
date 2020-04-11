@@ -13,7 +13,7 @@ class MovieDataSourceImpl(private val movieApiService: MovieApiService) : MovieD
         get() = _movies
 
     override suspend fun getMovies() {
-        val getMovies = movieApiService.getMovies()
-        _movies.postValue(getMovies.body())
+        val movies = movieApiService.getMovies()
+        _movies.postValue(movies.body())
     }
 }
